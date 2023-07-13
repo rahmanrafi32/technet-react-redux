@@ -12,7 +12,7 @@ export default function Signup() {
           to="/login"
           className={cn(
             buttonVariants({ variant: 'ghost', size: 'sm' }),
-            'absolute right-4 top-4 md:right-8 md:top-8'
+            'absolute right-4 top-4 md:right-8 md:top-8',
           )}
         >
           Login
@@ -26,7 +26,9 @@ export default function Signup() {
             }}
           />
           <div className="relative z-20 flex items-center text-lg font-medium">
-            <img className="h-8" src={logo} alt="" />
+            <Link to="/">
+              <img className="h-8" src={logo} alt="" />
+            </Link>
           </div>
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2"></blockquote>

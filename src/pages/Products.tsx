@@ -7,8 +7,8 @@ import {
   setPriceRange,
   toggleState,
 } from '@/redux/features/product/productSlice.ts';
-import { useGetProductsQuery } from '@/redux/api/apiSlice.ts';
 import { IProduct } from '@/types/globalTypes.ts';
+import { useGetProductsQuery } from '@/redux/features/product/productApi.ts';
 
 export default function Products() {
   const { data } = useGetProductsQuery(undefined);
